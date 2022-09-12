@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,15 +9,15 @@ const Header = () => {
         className="navbar navbar-expand-lg"
         style={{ backgroundColor: "rgb(120, 120, 120" }}
       >
-        <NavLink to="/" className="btn" style={{ cloro: "white" }}>
+        <Link to="/" className="btn" style={{ cloro: "white" }}>
           Home
-        </NavLink>
-        <NavLink to="/add" className="btn" style={{ cloro: "white" }}>
+        </Link>
+        <Link to="/add" className="btn" style={{ cloro: "white" }}>
           Add
-        </NavLink>
-        <NavLink to="/about" className="btn" style={{ cloro: "white" }}>
+        </Link>
+        <Link to="/about" className="btn" style={{ cloro: "white" }}>
           About
-        </NavLink>
+        </Link>
       </nav>
     </div>
   );
